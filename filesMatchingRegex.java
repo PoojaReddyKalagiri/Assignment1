@@ -15,7 +15,7 @@ public class filesMatchingRegex {
                 if (file.isFile()) {
                     String fileName = file.getName();
                     Matcher m = p.matcher(fileName);
-                    if (m.matches()) {
+                    if (m.find()) {
                         System.out.println(file.getAbsolutePath());    // prints the whole path of the matched file
                     }
                 }
